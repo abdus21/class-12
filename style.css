@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* .box2 button{
+     padding: 10px 0px;
+    width: 100px;
+}
+
+.style-css{
+    width: 350px;
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px;
+} */
+
+.box-1{
+    background-color: grey;
+}
+
+.color{
+    background-color: rgb(17, 218, 67);
+}
