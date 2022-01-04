@@ -26,7 +26,7 @@ check.addEventListener('click', ()=>{
     }
 
     if(name.value == '' || year.value == ''){
-         result.innerHTML = ' <p class="alert-danger py-2">All Fields are Required</p>'
+         result.innerHTML = ' <p class="alert-danger py-2">All Fields are Required!</p>'
     }else{
         result.innerHTML = agecal(name.value,year.value);
     }

@@ -23,7 +23,7 @@ form_submit.addEventListener('submit', (e) =>{
     let passwordvalue = password.value;
 
     if(formNamevalue == '' || formEmailvalue == '' || formResultvalue == ''){
-        card_body_p.innerHTML = '<p class="alert alert-danger">All fields are required</p>' 
+        card_body_p.innerHTML = '<p class="alert alert-danger">All fields are required!</p>' 
     }
 
     if(formName.value == ''){
