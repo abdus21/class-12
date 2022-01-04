@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,12 +36,15 @@
    
 
 
-    <div class="container">
-        <div class="rpw">
+
+
+
+    <div class="container mb-5">
+        <div class="row">
             <div class="col-lg-4"></div>
-            <div class="col-lg-4 text-center mt-5">
-                <div class="box-1 p-3">
-                    <div class="box-2">
+            <div class="col-lg-4">
+                <div class="box-1 p-3 mt-5">
+                    <div class="box-2 text-center">
                         <h2>Age calculator</h2>
                         <div class="form-group mb-3">
                             <input id="name" class="form-control font-weight-bold" type="text" placeholder="Name">
@@ -46,7 +52,7 @@
                         </div>
                         <div class="form-group mb-3">
                             <input id="year" placeholder="Year" class="form-control font-weight-bold" type="text">
-                            <p id="keyup2"></p>
+                            <p id="keyup-2"></p>
                         </div>
                         <div class="form-group mb-3">
                             <input id="check" class="form-control btn-primary btn" type="submit" value="check">
@@ -55,10 +61,162 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4"></div>
             <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h3>form</h3>
+                    </div>
+                    <div class="card-body">
+                                     <p></p>
+                        <form id="form-submit"  action="">
+                            <div class="form-group mb-3">
+                                <input id="form-name" class="form-control" type="text" placeholder="Name">
+                                <p id="result-1"></p>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input id="form-email" class="form-control" type="text" placeholder="Email">
+                                <p id="result-2"></p>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input id="password" placeholder="Password" class="form-control" type="password">
+                                <p id="result-4"></p>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input id="form-uname" class="form-control" type="text" placeholder="Username">
+                                <p id="result-3"></p>
+                            </div>
+                            <div class="form-group text-center">
+                                <input class="btn btn-primary" type="submit" value="Sing Up">
+                            </div>
+                        </form>
+                        <p id="form-result"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>currency converter</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group d-flex">
+                            <input id="amount" class="form-control mr-2" type="text">
+                            <select name="" id="convert">
+                                <option value="116">Pound</option>
+                                <option value="60">CAD</option>
+                                <option value="86">USD</option>
+                                <option value="98">EURO</option>
+                            </select>
+                        </div>
+                        <button class="center" id="curr-convert">convert</button>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p id="curre-output"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 class="text-center">marriage check </h1>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group mb-3">
+                            <input id="marriage_name" class="form-control font-weight-bold" type="text" placeholder="Name">
+                            <p id="marriage_keyup"></p>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input id="marriage_year" placeholder="Year" class="form-control font-weight-bold" type="text">
+                            <p id="marriage_keyup-2"></p>
+                        </div>
+                        <div class="form-group mb-3">
+                            <input id="marriage_check" class="ml-auto d-block btn-primary btn" type="submit" value="check">
+                        </div>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p id="marriage_result" ></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+
+<!-- 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <h2 class="text-center">sing Up</h2>
+                <form action="" id="form_submit">
+                    <div class="form-group successm error">
+                        <label for="username">username</label>
+                        <input id="uname" class="form-control mb-3" type="text" placeholder="username">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massage</small>
+                    </div>
+                    <div class="form-group successm">
+                        <label for="Email">Email</label>
+                        <input id="Email" class="form-control mb-3" type="email" placeholder="Email">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massage</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">password</label>
+                        <input id="password" class="form-control mb-3" type="password" placeholder="password">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massage</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="password check">password check</label>
+                        <input id="password2" class="form-control mb-3" type="password" placeholder="password check">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error massage</small>
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div class="col-lg-3">
             </div>
         </div>
     </div>
+
+
+  -->
+
+  
+
+
+
+
+
+
     <br>
     <br>
     <br>
@@ -74,8 +232,12 @@
     <br>
     <br>
     <br>
+
     <script src="function.js"></script>
     <script src="practice.js"></script>
+    <script src="agecalcutator.js"></script>
+    <script src="form.js"></script>
+    <script src="Currency_Converter.js"></script>
 
 </body>
 </html>

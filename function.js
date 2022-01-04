@@ -1,5 +1,9 @@
 
 
+
+
+
+
 function agecal(name,year){
 
     let date = new Date();
@@ -7,7 +11,6 @@ function agecal(name,year){
     let resivstatus = agestatus(age);
 
     return `
-    
     <p class="alert alert-${resivstatus.color} ${resivstatus.color}">Hi,${name} you are ${age} years old & you are ${resivstatus.status}</p>
     
     `
@@ -15,6 +18,7 @@ function agecal(name,year){
 
 
 function agestatus(age){
+    
     if(age > 0 && age <= 12){
         return{
             status : 'baby',
@@ -46,4 +50,6 @@ function agestatus(age){
             color : 'white'
         }
     }
-}
+};
+
+
