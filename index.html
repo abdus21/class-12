@@ -93,6 +93,7 @@
                                 <p id="result-3"></p>
                             </div>
                             <div class="form-group text-center">
+
                                 <input class="btn btn-primary" type="submit" value="Sing Up">
                             </div>
                         </form>
@@ -116,9 +117,9 @@
                         <div class="form-group d-flex">
                             <input id="amount" class="form-control mr-2" type="text">
                             <select name="" id="convert">
+                                <option value="86">USD</option>
                                 <option value="116">Pound</option>
                                 <option value="60">CAD</option>
-                                <option value="86">USD</option>
                                 <option value="98">EURO</option>
                             </select>
                         </div>
@@ -134,23 +135,32 @@
     </div>
 
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-6">
                 <div class="card">
                     <div class="card-header">
-                        <h1 class="text-center">marriage check </h1>
+                        <h2 class="text-center">marrige check</h2>
                     </div>
                     <div class="card-body">
-                        <div class="form-group mb-3">
-                            <input id="marriage_name" class="form-control font-weight-bold" type="text" placeholder="Name">
-                            <p id="marriage_keyup"></p>
+                        <div id="form">
+                            <div class="form-group mb-3">
+                                <input id="marriage_name" class="form-control font-weight-bold" type="text" placeholder="Name">
+                                <p></p>
+                            </div>
+                            <div class="form-group mb-3">
+                                <input id="marriage_year" placeholder="Year" class="form-control font-weight-bold" type="text">
+                                <p></p>
+                            </div>
+                            <div class="form-group">
+                                <input name="gender" value="male" class=""  type="radio">
+                                <label for="male">male</label>
+                                <input name="gender" value="female" class=""  type="radio">
+                                <label for="female">female</label>
+                            </div>
                         </div>
-                        <div class="form-group mb-3">
-                            <input id="marriage_year" placeholder="Year" class="form-control font-weight-bold" type="text">
-                            <p id="marriage_keyup-2"></p>
-                        </div>
+                            
                         <div class="form-group mb-3">
                             <input id="marriage_check" class="ml-auto d-block btn-primary btn" type="submit" value="check">
                         </div>
@@ -238,6 +248,7 @@
     <script src="agecalcutator.js"></script>
     <script src="form.js"></script>
     <script src="Currency_Converter.js"></script>
+    <script src="marriage_caculator.js"></script>
 
 </body>
 </html>
